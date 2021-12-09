@@ -1,0 +1,467 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Article</title>
+
+  <!-- page loader scripte -->
+  <script>
+    document.onreadystatechange = function () {
+      if (document.readyState === "complete") {
+        document
+          .getElementById("pipernet-loader-container")
+          .classList.add("off");
+        document.getElementById("pipernet-loader").classList.add("off");
+        document.querySelector("body").style.overflow = "auto";
+      } else {
+        document.querySelector("body").style.overflow = "hidden";
+      }
+    };
+  </script>
+  <!-- end page loader scripte -->
+</head>
+
+<body>
+  <!-- header -->
+  <header
+    class="d-flex justify-content-between container align-items-center sticky-top navbar navbar-expand-md navbar-light">
+    <h1 class="logo">
+      <a href="./index.html"><span>analysis.</span> pipernet.ir</a>
+    </h1>
+
+    <nav id="my-nav" class="collapse navbar-collapse justify-content-center">
+      <ul class="nav ml-auto flex-column flex-md-row">
+        <li class="nav-item"><a href="./index.html" class="nav-link">home</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="./blog.html" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            blog
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-container">
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+            <div class="dropdown-container">
+              <a class="dropdown-item" href="#"> Another action </a>
+              <div class="dropdown-menu-c">
+                <div class="dropdown-menu">
+                  <div class="dropdown-container">
+                    <a class="dropdown-item" href="#">Action deep</a>
+                  </div>
+                  <div class="dropdown-container">
+                    <a class="dropdown-item" href="#">Another action deep</a>
+                  </div>
+                  <div class="dropdown-container">
+                    <a class="dropdown-item" href="#">Something else here deep</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-container">
+              <a class="dropdown-item" href="./blog.html">all post in blog</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="./about.html" class="nav-link active">about</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link">contact</a></li>
+      </ul>
+      <div class="ml-auto d-flex flex-column flex-sm-row align-items-center">
+        <form method="get" action="" class="d-inline-block mb-2 mb-sm-0 w-smm-100">
+          <div class="form-group mb-0 search-head-c d-flex justify-content-end">
+            <input id="search-archive" class="form-control" type="search" name="" placeholder="search ...">
+            <button class="btn btn-warning"><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+        <a href="#" class="left-cta btn-warning btn ml-0 ml-sm-1 mb-2 mb-sm-0 w-smm-100">sign up</a>
+        <a href="#" class="left-cta-1 btn ml-sm-1 w-smm-100">login</a>
+      </div>
+    </nav>
+
+    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </header>
+  <!-- end header -->
+
+  <main>
+    <!-- top section -->
+    <section class="mt-5 mb-0 mb-md-5">
+      <div class="container">
+        <div class="row align-items-center dir-md-rtl">
+          <!-- bg image one blue -->
+          <div class="col-12 col-md-6 col-lg-7">
+            <div class="top-bg-image">
+              <div class="one-blue about-top d-flex justify-content-center">
+                <img src="./image/1600-removebg2.png" class="img-fluid pl-0  pl-lg-5 pt-lg-4" alt="">
+                <span class="ofh"></span>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-12 col-md-6 col-lg-5 ltr">
+            <div class="top-text p-0 mt-0 mt-md-5 pt-0 pt-md-5">
+              <h3>We are young and creative people who provide the best for you</h3>
+            </div>
+            <div class="row mt-0 mt-md-5 pt-0 pt-md-5">
+              <div class="col-4 till-now">
+                <h5 class="d-inline-block mb-0" till-now>156</h5><span class="plus">+</span>
+                <p>happy clint</p>
+              </div>
+              <div class="col-4 till-now">
+                <h5 class="d-inline-block mb-0" till-now>40</h5><span class="plus">+</span>
+                <p>Language</p>
+              </div>
+              <div class="col-4 till-now">
+                <h5 class="d-inline-block mb-0" till-now>6</h5><span class="plus">+</span>
+                <p>Years</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us -->
+    <section class="p-70 about-us">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <div class="card bg-transparent border-0 card-about">
+              <div class="card-body">
+                <h5 class="card-title mb-4">about us</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                  eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                  massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                  rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our team -->
+    <section class="p-70 our-team">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- heading -->
+          <div class="col-12 col-md-8">
+            <div class="card bg-transparent border-0 card-about">
+              <div class="card-body">
+                <h5 class="card-title mb-4">This is us at your service</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <!-- post -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card border-0 bg-transparent card-team mx-0 mx-lg-2 mb-5">
+              <div class="card-img-top">
+                <img class="card-img" src="./image/team3.jpg" alt="">
+                <img class="card-img team-2" src="./image/team2.jpg" alt="">
+                <img class="card-img team-3" src="./image/team1.jpg" alt="">
+              </div>
+              <div class="card-body mx-3 bg-white">
+                <div class="social-icons d-flex justify-content-center">
+                  <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-telegram-plane"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <h5 class="card-title mb-0"><a href="#">richard hendricks</a></h5>
+                <p class="card-text">CEO -Chief executive officer</p>
+              </div>
+            </div>
+          </div>
+          <!-- post -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card border-0 bg-transparent card-team mx-0 mx-lg-2 mb-5">
+              <div class="card-img-top">
+                <img class="card-img" src="./image/jard.jpeg" alt="">
+                <img class="card-img team-2" src="./image/jard2.jpeg" alt="">
+              </div>
+              <div class="card-body mx-3 bg-white">
+                <div class="social-icons d-flex justify-content-center">
+                  <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-telegram-plane"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <h5 class="card-title mb-0"><a href="#">Donald 'Jared' Dunn</a></h5>
+                <p class="card-text">CEO -Chief executive officer</p>
+              </div>
+            </div>
+          </div>
+          <!-- post -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card border-0 bg-transparent card-team mx-0 mx-lg-2 mb-5">
+              <div class="card-img-top">
+                <img class="card-img" src="./image/Gilfoyle.jpg" alt="">
+                <img class="card-img team-2" src="./image/Gilfoyle2.jpg" alt="">
+              </div>
+              <div class="card-body mx-3 bg-white">
+                <div class="social-icons d-flex justify-content-center">
+                  <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-telegram-plane"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <h5 class="card-title mb-0"><a href="#">Bertram Gilfoyle</a></h5>
+                <p class="card-text">CEO -Chief executive officer</p>
+              </div>
+            </div>
+          </div>
+          <!-- post -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card border-0 bg-transparent card-team mx-0 mx-lg-2 mb-5">
+              <div class="card-img-top">
+                <img class="card-img" src="./image/dinesh.jpg" alt="">
+                <img class="card-img team-2" src="./image/dinesh2.jpeg" alt="">
+                <img class="card-img team-3" src="./image/dinesh3.jpg" alt="">
+              </div>
+              <div class="card-body mx-3 bg-white">
+                <div class="social-icons d-flex justify-content-center">
+                  <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-telegram-plane"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <h5 class="card-title mb-0"><a href="#">Dinesh Chugtai</a></h5>
+                <p class="card-text">CEO -Chief executive officer</p>
+              </div>
+            </div>
+          </div>
+          <!-- post -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card border-0 bg-transparent card-team mx-0 mx-lg-2 mb-5">
+              <div class="card-img-top">
+                <img class="card-img" src="./image/Erlich_Bachman.jpg" alt="">
+                <img class="card-img team-2" src="./image/Erlich_Bachman2.jpg" alt="">
+                <img class="card-img team-3" src="./image/Erlich_Bachman3.jpg" alt="">
+              </div>
+              <div class="card-body mx-3 bg-white">
+                <div class="social-icons d-flex justify-content-center">
+                  <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-telegram-plane"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <h5 class="card-title mb-0"><a href="#">Erlich Bachman</a></h5>
+                <p class="card-text">CEO -Chief executive officer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Employment -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card border-0 bg-transparent card-team team-employment mx-0 mx-lg-2 mb-5">
+              <div class="card-img-top cit-ztop d-flex flex-column align-items-center justify-content-center p-5">
+                <h5 class="card-title">If you have wings, fly with us</h5>
+                <a href="#" class="btn btn-warning">more information</a>
+              </div>
+              <div class="card-body mx-3 bg-white t-none">
+                <h5 class="card-title mb-0"><a href="#">a dude</a></h5>
+                <p class="card-text">UI, UX designer</p>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </section>
+    <!-- Talk -->
+    <section class="p-70 pt-0 Talk">
+      <div class="container">
+
+        <div class="row">
+
+          <div id="carousel-talk" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators mb-0">
+              <li data-target="#carousel-talk" data-slide-to="0" class="active bg-dark"></li>
+              <li data-target="#carousel-talk" data-slide-to="1" class="bg-dark"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <!-- post -->
+              <div class="carousel-item active">
+                <div class="col-12 card-talk">
+                  <div class="card border-0 bg-transparent flex-lg-row">
+                    <div class="card-img-top mx-auto">
+                      <img class="card-img" src="./image/team3.jpg" alt="">
+                    </div>
+                    <div class="card-body mx-sm-3 px-2 px-sm-3 pb-4 bg-white">
+                      <h5 class="card-title mb-2">Nor again is there anyone who loves or pursues or desires to obtain
+                        pain of itself</h5>
+                      <p class="card-text text-justify">A wonderful serenity has taken possession of my entire soul,
+                        like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the
+                        charm of existence in this spot, which was created for the bliss of souls like mine. I am so
+                        happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I
+                        neglect my talents.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- post -->
+              <div class="carousel-item">
+                <div class="col-12 card-talk">
+                  <div class="card border-0 bg-transparent flex-lg-row">
+                    <div class="card-img-top mx-auto">
+                      <img class="card-img" src="./image/jard.jpeg" alt="">
+                    </div>
+                    <div class="card-body mx-sm-3 px-2 px-sm-3 pb-4 bg-white">
+                      <h5 class="card-title mb-2">Nor again is there anyone who loves or pursues or desires to obtain
+                        pain of
+                        itself</h5>
+                      <p class="card-text text-justify">A wonderful serenity has taken possession of my entire soul,
+                        like
+                        these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm
+                        of
+                        existence in this spot, which was created for the bliss of souls like mine. I am so happy, my
+                        dear
+                        friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my
+                        talents.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <div class="bg-svg-footer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#d19900" fill-opacity="1"
+        d="M0,288L34.3,240C68.6,192,137,96,206,64C274.3,32,343,64,411,90.7C480,117,549,139,617,133.3C685.7,128,754,96,823,96C891.4,96,960,128,1029,133.3C1097.1,139,1166,117,1234,128C1302.9,139,1371,181,1406,202.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- wiget -->
+        <div class="col-12 col-sm-12 col-md-5 col-lg-6">
+          <div class="wiget pl-3">
+            <h6 class="title">About PiperNet.ir</h6>
+            <p class="text">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+          </div>
+          <div class="wiget pl-3">
+            <h6 class="title">Join our social networks</h6>
+            <div class="social-icons d-flex justify-content-center">
+              <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="icon">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- wiget -->
+        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+          <div class="wiget">
+            <h6 class="title">top page</h6>
+            <nav class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">about us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://pipernet.ir">Work samples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">something else</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+        <!-- wiget -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <div class="wiget">
+            <h6 class="title">Quick info</h6>
+            <nav class="nav flex-column quick-info">
+              <li class="nav-item">
+                <i class="fas fa-envelope icon"></i>
+                <a class="nav-link mail" href="mailto:mamyrbas@gmail.com">
+                  mamyrbas@gmail.com
+                </a>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-envelope icon"></i>
+                <a class="nav-link mail" href="mailto:mamyrbas@gmail.com">
+                  support@pipernet.ir
+                  <span class="badge badge-dark">Inactive</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-phone-alt icon"></i>
+                <a class="nav-link phone js-leve-a-massage-first" href="tel:989190488012">
+                  +98 9190488012
+                </a>
+              </li>
+              <li class="nav-item">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <a class="nav-link map" href="https://www.google.com/maps/@34.6448141,50.8800475,13.5z">
+                  Iran, Qom, Islamic Revolution Street
+                </a>
+              </li>
+            </nav>
+          </div>
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+    <!-- copy right -->
+    <div class="copy-right bg-dark text-light">
+      <div class="container">
+        <div class="widget py-3 mb-0 d-flex justify-content-between align-items-center">
+          <p class="m-0">
+            © 2021. All Rights Reserved for A.A.M
+            <a href="https://www.pipernet.ir">PiperNet.ir</a>
+          </p>
+
+          <ul class="nav d-flex flex-column flex-md-row">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-3">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-3">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <!-- loader element -->
+  <div id="pipernet-loader-container">
+    <div id="pipernet-loader"></div>
+  </div>
+  <!-- end loader element -->
+</body>
+<script src="./js/all.min.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/theme.js"></script>
+
+</html>
